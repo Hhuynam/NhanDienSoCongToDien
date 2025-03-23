@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">电表识别应用</string>
+    <string name="language_button">切换语言</string>
+    <string name="label_camerax">摄像头X</string>
+    <string name="image_preview">图像预览</string>
+    <string name="capture_button">拍照</string>
+</resources>

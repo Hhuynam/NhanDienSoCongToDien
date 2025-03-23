@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="language_button">Switch Language</string>
+    <string name="label_camerax">CameraX</string>
+    <string name="image_preview">Image Preview</string>
+    <string name="capture_button">Capture</string>
+</resources>

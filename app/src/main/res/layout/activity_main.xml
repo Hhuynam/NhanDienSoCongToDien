@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- xml namespace, bắt đầu bằng tiền tố android-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- AppBar -->
+    <FrameLayout
+        android:id="@+id/Frame_AppBar"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:background="#AD1457">
+        <!-- Nút chuyển đổi ngôn ngữ-->
+        <Button
+            android:id="@+id/NutNhan_ChuyenDoiNgonNgu"
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+            android:text="@string/language_button" />
+    </FrameLayout>
+    <!-- Frame label camerax -->
+    <FrameLayout
+        android:id="@+id/Frame_Label"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#80CBC4" >
+        <TextView
+            android:id="@+id/Text_Label_Frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/label_camerax"
+            android:textAlignment="center"
+            android:textColor="#FFEBEE"
+            android:textSize="30sp" />
+    </FrameLayout>
+    <!-- Frame camerax -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/Frame_CameraX"
+        android:layout_width="match_parent"
+        android:layout_height="256dp" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- Frame label -->
+        <LinearLayout
+            android:id="@+id/Frame_Label_ImagePreview"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="#80CBC4"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--Frame label preview  -->
+        <TextView
+            android:id="@+id/Text_ImagePreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/image_preview"
+            android:textAlignment="center"
+            android:textColor="#FFEBEE"
+            android:textSize="30sp" />
+        <!-- Frame Image placeholder-->
+        <!--Nút chụp ảnh-->
+
+        <ImageView
+            android:id="@+id/Frame_Image_PlaceHolder"
+            android:layout_width="match_parent"
+            android:layout_height="177dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Frame_Label_ImagePreview"
+            app:srcCompat="@drawable/placeholder" />
+
+        <Button
+            android:id="@+id/NutNhan_ChupAnh"
+            android:layout_width="126dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/capture_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Frame_Image_PlaceHolder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

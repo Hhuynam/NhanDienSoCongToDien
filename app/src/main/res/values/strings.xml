@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">NhanDienSoCongToDien</string>
+    <string name="app_name">Nhận diện số công tơ điện</string>
+    <string name="language_button">Chuyển đổi ngôn ngữ</string>
+    <string name="label_camerax">CameraX-Nhận diện số</string>
+    <string name="image_preview">Xem trước hình ảnh</string>
+    <string name="capture_button">Chụp ảnh</string>
 </resources>

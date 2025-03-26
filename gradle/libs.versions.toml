@@ -1,19 +1,27 @@
 [versions]
 agp = "8.7.3"
+cameraViewVersion = "1.3.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 appcompat = "1.7.0"
 material = "1.12.0"
 cameraView = "1.4.1"
+opencvAndroid = "4.5.5"
+opencvAndroidVersion = "4.8.1"
 
 [libraries]
+androidx-camera-core = { module = "androidx.camera:camera-core", version.ref = "cameraView" }
+androidx-camera-lifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "cameraViewVersion" }
+androidx-camera-view-v130 = { module = "androidx.camera:camera-view", version.ref = "cameraViewVersion" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 camera-view = { group = "androidx.camera", name = "camera-view", version.ref = "cameraView" }
+opencv-android = { module = "org.opencv:opencv-android", version.ref = "opencvAndroid" }
+opencv-android-v481 = { module = "org.opencv:opencv-android", version.ref = "opencvAndroidVersion" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

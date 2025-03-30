@@ -10,14 +10,27 @@
     <FrameLayout
         android:id="@+id/Frame_AppBar"
         android:layout_width="match_parent"
-        android:layout_height="86dp"
+        android:layout_height="165dp"
         android:background="#AD1457">
         <!-- Nút chuyển đổi ngôn ngữ-->
-        <Button
-            android:id="@+id/NutNhan_ChuyenDoiNgonNgu"
-            android:layout_width="215dp"
-            android:layout_height="wrap_content"
-            android:text="@string/language_button" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/NutNhan_ChuyenDoiNgonNgu"
+                android:layout_width="215dp"
+                android:layout_height="wrap_content"
+                android:text="@string/language_button" />
+
+            <Button
+                android:id="@+id/NutNhan_TimKiem"
+                android:layout_width="215dp"
+                android:layout_height="wrap_content"
+                android:text="Trang tìm kiếm ảnh chụp" />
+        </LinearLayout>
+
     </FrameLayout>
     <!-- Frame label camerax -->
     <FrameLayout

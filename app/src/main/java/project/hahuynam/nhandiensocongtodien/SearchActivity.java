@@ -1,10 +1,8 @@
 //SearchActivity.java
 package project.hahuynam.nhandiensocongtodien;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.Button;
-
 public class SearchActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
